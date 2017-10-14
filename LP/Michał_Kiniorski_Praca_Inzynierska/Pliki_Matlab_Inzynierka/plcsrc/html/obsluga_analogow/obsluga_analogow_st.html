@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1250" />
+<title>RTW Report - obsluga_analogow.st</title>
+<style> .LN { font-style: italic; color: #888888 } </style>
+<style> .CT { font-style: italic; color: #117755 } </style>
+<style> .PP { font-style: bold;   color: #992211 } </style>
+<style> .KW { font-style: bold;   color: #112266 } </style>
+<style> .DT { font-style: bold;   color: #112266 } </style>
+<link rel="stylesheet" type="text/css" href="rtwreport.css"></link><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script>
+<SCRIPT type="text/javascript" language="JavaScript" src="slwebview.js"></SCRIPT>
+<SCRIPT type="text/javascript" language="JavaScript" src="id_mapping.js"></SCRIPT>
+</head>
+<body bgcolor="#eeeeee" text="#1122aa" onload="try {if (top) { if (top.rtwFileOnLoad) top.rtwFileOnLoad(window.document); else local_onload();}} catch(err) {};">
+<p>
+<table border="0" cellspacing="0" cellpadding="6" width="100%%" height="100%%"><tr><td width="100%%" valign="top" bgcolor="#ffffff">
+<h4>File: <a href="file:///plcsrc/obsluga_analogow.st" target="rtwreport_document_frame" id="linkToText_plain">obsluga_analogow.st</a></h4>
+<pre id="RTWcode">
+<span><a class="LN" name="1">    1   </a><span class="CT">(*</span>
+</span><span><a class="LN" name="2">    2   </a><span class="CT"> *</span>
+</span><span><a class="LN" name="3">    3   </a><span class="CT"> * File: obsluga_analogow.st</span>
+</span><span><a class="LN" name="4">    4   </a><span class="CT"> *</span>
+</span><span><a class="LN" name="5">    5   </a><span class="CT"> * IEC 61131-3 Structured Text (ST) code generated for subsystem "obsluga_analogow/obsluga_analogow"</span>
+</span><span><a class="LN" name="6">    6   </a><span class="CT"> *</span>
+</span><span><a class="LN" name="7">    7   </a><span class="CT"> * Model name                      : obsluga_analogow</span>
+</span><span><a class="LN" name="8">    8   </a><span class="CT"> * Model version                   : 1.5</span>
+</span><span><a class="LN" name="9">    9   </a><span class="CT"> * Model creator                   : Michal</span>
+</span><span><a class="LN" name="10">   10   </a><span class="CT"> * Model last modified by          : Michal</span>
+</span><span><a class="LN" name="11">   11   </a><span class="CT"> * Model last modified on          : Mon Dec 28 16:05:02 2015</span>
+</span><span><a class="LN" name="12">   12   </a><span class="CT"> * Model sample time               : 0s</span>
+</span><span><a class="LN" name="13">   13   </a><span class="CT"> * Subsystem name                  : obsluga_analogow/obsluga_analogow</span>
+</span><span><a class="LN" name="14">   14   </a><span class="CT"> * Subsystem sample time           : 0.2s</span>
+</span><span><a class="LN" name="15">   15   </a><span class="CT"> * Simulink PLC Coder version      : 1.8 (R2014b) 08-Sep-2014</span>
+</span><span><a class="LN" name="16">   16   </a><span class="CT"> * ST code generated on            : Sat Jan 09 05:57:15 2016</span>
+</span><span><a class="LN" name="17">   17   </a><span class="CT"> *</span>
+</span><span><a class="LN" name="18">   18   </a><span class="CT"> * Target IDE selection            : Phoenix Contact PC WORX 6.0</span>
+</span><span><a class="LN" name="19">   19   </a><span class="CT"> * Test Bench included             : No</span>
+</span><span><a class="LN" name="20">   20   </a><span class="CT"> *</span>
+</span><span><a class="LN" name="21">   21   </a><span class="CT"> *)</span>
+</span><span><a class="LN" name="22">   22   </a><a name="fcn_obsluga_analogow0">FUNCTION_BLOCK obsluga_analogow0</a>
+</span><span><a class="LN" name="23">   23   </a>VAR_INPUT
+</span><span><a class="LN" name="24">   24   </a>    analog_1: REAL;
+</span><span><a class="LN" name="25">   25   </a>    analog_2: REAL;
+</span><span><a class="LN" name="26">   26   </a>    analog_3: REAL;
+</span><span><a class="LN" name="27">   27   </a>END_VAR
+</span><span><a class="LN" name="28">   28   </a>VAR_OUTPUT
+</span><span><a class="LN" name="29">   29   </a>    Poziomgrnyzbiornik: REAL;
+</span><span><a class="LN" name="30">   30   </a>    Poziomrodkowyzbiornik: REAL;
+</span><span><a class="LN" name="31">   31   </a>    Poziomdolnyzbiornik: REAL;
+</span><span><a class="LN" name="32">   32   </a>END_VAR
+</span><span><a class="LN" name="33">   33   </a>VAR
+</span><span><a class="LN" name="34">   34   </a>END_VAR
+</span><span><a class="LN" name="35">   35   </a>VAR_TEMP
+</span><span><a class="LN" name="36">   36   </a>END_VAR
+</span><span><a class="LN" name="37">   37   </a>Poziomgrnyzbiornik := ((analog_1 / 2947.9) * 15.6645) + -0.5253;
+</span><span><a class="LN" name="38">   38   </a>Poziomrodkowyzbiornik := ((analog_2 / 2941.0) * 15.4212) + -0.0352;
+</span><span><a class="LN" name="39">   39   </a>Poziomdolnyzbiornik := (((analog_3 - 2960.0) / 3067.6) * 25.129) + -24.1137;
+</span><span><a class="LN" name="40">   40   </a>END_FUNCTION_BLOCK
+</span><span><a class="LN" name="41">   41   </a>VAR_GLOBAL CONSTANT
+</span><span><a class="LN" name="42">   42   </a>END_VAR
+</span><span><a class="LN" name="43">   43   </a>VAR_GLOBAL
+</span><span><a class="LN" name="44">   44   </a>END_VAR
+</span><span><a class="LN" name="45">   45   </a>
+</span></pre>
+</td></tr></table>
+</p>
+</body>
+</html>

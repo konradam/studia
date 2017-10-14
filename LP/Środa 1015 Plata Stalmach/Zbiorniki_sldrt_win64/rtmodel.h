@@ -1,0 +1,27 @@
+/*
+ *  rtmodel.h:
+ *
+ * Code generation for model "Zbiorniki".
+ *
+ * Model version              : 1.121
+ * Simulink Coder version : 8.8.1 (R2015aSP1) 04-Sep-2015
+ * C source code generated on : Wed Apr 12 11:34:17 2017
+ *
+ * Target selection: rtwin.tlc
+ * Note: GRT includes extra infrastructure and instrumentation for prototyping
+ * Embedded hardware selection: 32-bit Generic
+ * Emulation hardware selection:
+ *    Differs from embedded hardware (MATLAB Host)
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ */
+
+#ifndef RTW_HEADER_rtmodel_h_
+#define RTW_HEADER_rtmodel_h_
+
+/*
+ *  Includes the appropriate headers when we are using rtModel
+ */
+#include "Zbiorniki.h"
+#define GRTINTERFACE                   1
+#endif                                 /* RTW_HEADER_rtmodel_h_ */

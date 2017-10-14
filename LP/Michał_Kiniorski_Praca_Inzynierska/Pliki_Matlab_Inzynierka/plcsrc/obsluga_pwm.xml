@@ -1,0 +1,32 @@
+
+      <pous>
+         <pou name="Obsluga_pwm0" pouType="functionBlock">
+            <interface>
+               <localVars/>
+               <outputVars>
+                  <variable name="PWM1">
+                     <type>
+                        <UDINT/>
+                     </type>
+                  </variable>
+               </outputVars>
+               <inputVars>
+                  <variable name="wsp_zawory1">
+                     <type>
+                        <UDINT/>
+                     </type>
+                  </variable>
+                  <variable name="wsp_pompa1">
+                     <type>
+                        <UDINT/>
+                     </type>
+                  </variable>
+               </inputVars>
+            </interface>
+            <body>
+               <ST>
+                  <html xmlns="http://www.w3.org/1999/xhtml">
+                     <div id="MWTDESCRIPTION" wsName="Obsluga_pwm0" xml:space="preserve">
+
+PWM1 := (DWORD_TO_UDINT(SHL(UDINT_TO_DWORD(UDINT#16384 + wsp_pompa1), DINT#16)) + wsp_zawory1) + UDINT#16384;
+         

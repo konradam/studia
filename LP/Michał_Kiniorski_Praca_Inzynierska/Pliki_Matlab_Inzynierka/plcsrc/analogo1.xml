@@ -1,0 +1,35 @@
+<project xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.plcopen.org/xml/tc6.xsd">
+	<fileHeader companyName="Phoenix Contact" companyURL="www.kw-software.com" productName="PC WORX" productVersion="6.30" creationDateTime="2016-01-09T01:01:39" contentDescription=""/>
+	<contentHeader name="PROGRAM_13_12_OPC" version="1452297699" modificationDateTime="2016-01-09T01:01:39">
+		<coordinateInfo>
+			<pageSize x="400" y="400"/>
+			<fbd>
+				<scaling x="2" y="2"/>
+			</fbd>
+			<ld>
+				<scaling x="2" y="2"/>
+			</ld>
+			<sfc>
+				<scaling x="2" y="2"/>
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<types>
+		<dataTypes/>
+		<pous>
+			<pou name="Przyklad" pouType="functionBlock">
+				<interface/>
+				<body>
+					<ST>
+						<html xmlns="http://www.w3.org/1999/xhtml">
+							<p xml:space="preserve" xmlns="http://www.w3.org/1999/xhtml"/>
+						</html>
+					</ST>
+				</body>
+			</pou>
+		</pous>
+	</types>
+	<instances>
+		<configurations/>
+	</instances>
+</project>

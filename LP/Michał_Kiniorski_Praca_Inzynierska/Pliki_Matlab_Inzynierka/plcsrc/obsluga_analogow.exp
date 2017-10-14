@@ -1,0 +1,50 @@
+
+FUNCTION_BLOCK obsluga_analogow0
+VAR_INPUT
+    In1: REAL;
+    In2: REAL;
+    In3: REAL;
+END_VAR
+VAR_OUTPUT
+    Out1: REAL;
+    Out2: REAL;
+    Out3: REAL;
+END_VAR
+VAR
+END_VAR
+VAR_TEMP
+END_VAR
+(* Outport: '<Root>/Out1' incorporates:
+ *  Constant: '<S1>/Constant'
+ *  Constant: '<S1>/Constant2'
+ *  Constant: '<S1>/Constant3'
+ *  Inport: '<Root>/In1'
+ *  Product: '<S1>/Divide'
+ *  Product: '<S1>/Product'
+ *  Sum: '<S1>/Add' *)
+Out1 := ((In1 / 2947.9) * 15.6645) + -0.5253;
+(* Outport: '<Root>/Out2' incorporates:
+ *  Constant: '<S1>/Constant1'
+ *  Constant: '<S1>/Constant4'
+ *  Constant: '<S1>/Constant5'
+ *  Inport: '<Root>/In2'
+ *  Product: '<S1>/Divide1'
+ *  Product: '<S1>/Product1'
+ *  Sum: '<S1>/Add1' *)
+Out2 := ((In2 / 2941.0) * 15.4212) + -0.0352;
+(* Outport: '<Root>/Out3' incorporates:
+ *  Constant: '<S1>/Constant6'
+ *  Constant: '<S1>/Constant7'
+ *  Constant: '<S1>/Constant8'
+ *  Constant: '<S1>/Constant9'
+ *  Inport: '<Root>/In3'
+ *  Product: '<S1>/Divide2'
+ *  Product: '<S1>/Product2'
+ *  Sum: '<S1>/Add2'
+ *  Sum: '<S1>/Add3' *)
+Out3 := (((In3 - 2960.0) / 3067.6) * 25.129) + -24.1137;
+END_FUNCTION_BLOCK
+VAR_GLOBAL CONSTANT
+END_VAR
+VAR_GLOBAL
+END_VAR

@@ -1,0 +1,2782 @@
+Model {
+  Name			  "model_matematyczny"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1250"
+  GraphicalInterface {
+    NumRootInports	    1
+    Inport {
+      BusObject		      ""
+      Name		      "q"
+    }
+    NumRootOutports	    3
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      ""
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      ""
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      ""
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.64"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "model_matematyczny"
+      PropName		      "mdlProps"
+    }
+  }
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1378.0, 744.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1135.0, 567.0]
+	  ZoomFactor		  [0.96512021672875048]
+	  Offset		  [640.49403508771911, -107.06438596491228]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "82"
+	  Extents		  [1135.0, 567.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [445.57142857142856, 546.42857142857144]
+	}
+	PropName		"EditorsInfo"
+      }
+    }
+  }
+  Created		  "Wed Nov 18 16:22:26 2015"
+  Creator		  "Michal"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Michal"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Nov 26 20:50:51 2015"
+  RTWModifiedTimeStamp	  370471850
+  ModelVersionFormat	  "1.%<AutoIncrement:64>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "model_matematyczny"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "model_matematyczny"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      9
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "500"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.05"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  15
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  16
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  17
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      18
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      19
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  20
+	  Version		  "1.13.1"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 77, 44, 1221, 836 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    9
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    21
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Lookup_n-D
+      NumberOfTableDimensions "2"
+      BreakpointsForDimension1 "[10,22,31]"
+      BreakpointsForDimension2 "[10,22,31]"
+      BreakpointsForDimension3 "[1:3]"
+      BreakpointsForDimension4 "[1:3]"
+      BreakpointsForDimension5 "[1:3]"
+      BreakpointsForDimension6 "[1:3]"
+      BreakpointsForDimension7 "[1:3]"
+      BreakpointsForDimension8 "[1:3]"
+      BreakpointsForDimension9 "[1:3]"
+      BreakpointsForDimension10	"[1:3]"
+      BreakpointsForDimension11	"[1:3]"
+      BreakpointsForDimension12	"[1:3]"
+      BreakpointsForDimension13	"[1:3]"
+      BreakpointsForDimension14	"[1:3]"
+      BreakpointsForDimension15	"[1:3]"
+      BreakpointsForDimension16	"[1:3]"
+      BreakpointsForDimension17	"[1:3]"
+      BreakpointsForDimension18	"[1:3]"
+      BreakpointsForDimension19	"[1:3]"
+      BreakpointsForDimension20	"[1:3]"
+      BreakpointsForDimension21	"[1:3]"
+      BreakpointsForDimension22	"[1:3]"
+      BreakpointsForDimension23	"[1:3]"
+      BreakpointsForDimension24	"[1:3]"
+      BreakpointsForDimension25	"[1:3]"
+      BreakpointsForDimension26	"[1:3]"
+      BreakpointsForDimension27	"[1:3]"
+      BreakpointsForDimension28	"[1:3]"
+      BreakpointsForDimension29	"[1:3]"
+      BreakpointsForDimension30	"[1:3]"
+      BreakpointsForDimension1Min "[]"
+      BreakpointsForDimension2Min "[]"
+      BreakpointsForDimension3Min "[]"
+      BreakpointsForDimension4Min "[]"
+      BreakpointsForDimension5Min "[]"
+      BreakpointsForDimension6Min "[]"
+      BreakpointsForDimension7Min "[]"
+      BreakpointsForDimension8Min "[]"
+      BreakpointsForDimension9Min "[]"
+      BreakpointsForDimension10Min "[]"
+      BreakpointsForDimension11Min "[]"
+      BreakpointsForDimension12Min "[]"
+      BreakpointsForDimension13Min "[]"
+      BreakpointsForDimension14Min "[]"
+      BreakpointsForDimension15Min "[]"
+      BreakpointsForDimension16Min "[]"
+      BreakpointsForDimension17Min "[]"
+      BreakpointsForDimension18Min "[]"
+      BreakpointsForDimension19Min "[]"
+      BreakpointsForDimension20Min "[]"
+      BreakpointsForDimension21Min "[]"
+      BreakpointsForDimension22Min "[]"
+      BreakpointsForDimension23Min "[]"
+      BreakpointsForDimension24Min "[]"
+      BreakpointsForDimension25Min "[]"
+      BreakpointsForDimension26Min "[]"
+      BreakpointsForDimension27Min "[]"
+      BreakpointsForDimension28Min "[]"
+      BreakpointsForDimension29Min "[]"
+      BreakpointsForDimension30Min "[]"
+      BreakpointsForDimension1Max "[]"
+      BreakpointsForDimension2Max "[]"
+      BreakpointsForDimension3Max "[]"
+      BreakpointsForDimension4Max "[]"
+      BreakpointsForDimension5Max "[]"
+      BreakpointsForDimension6Max "[]"
+      BreakpointsForDimension7Max "[]"
+      BreakpointsForDimension8Max "[]"
+      BreakpointsForDimension9Max "[]"
+      BreakpointsForDimension10Max "[]"
+      BreakpointsForDimension11Max "[]"
+      BreakpointsForDimension12Max "[]"
+      BreakpointsForDimension13Max "[]"
+      BreakpointsForDimension14Max "[]"
+      BreakpointsForDimension15Max "[]"
+      BreakpointsForDimension16Max "[]"
+      BreakpointsForDimension17Max "[]"
+      BreakpointsForDimension18Max "[]"
+      BreakpointsForDimension19Max "[]"
+      BreakpointsForDimension20Max "[]"
+      BreakpointsForDimension21Max "[]"
+      BreakpointsForDimension22Max "[]"
+      BreakpointsForDimension23Max "[]"
+      BreakpointsForDimension24Max "[]"
+      BreakpointsForDimension25Max "[]"
+      BreakpointsForDimension26Max "[]"
+      BreakpointsForDimension27Max "[]"
+      BreakpointsForDimension28Max "[]"
+      BreakpointsForDimension29Max "[]"
+      BreakpointsForDimension30Max "[]"
+      BreakpointsForDimension1DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension2DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension3DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension4DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension5DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension6DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension7DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension8DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension9DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension10DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension11DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension12DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension13DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension14DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension15DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension16DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension17DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension18DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension19DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension20DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension21DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension22DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension23DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension24DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension25DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension26DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension27DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension28DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension29DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension30DataTypeStr "Inherit: Same as corresponding input"
+      IndexSearchMethod	      "Binary search"
+      BeginIndexSearchUsingPreviousIndexResult off
+      UseOneInputPortForAllInputData off
+      Table		      "[4 5 6;16 19 20;10 18 23]"
+      TableMin		      "[]"
+      TableMax		      "[]"
+      TableDataTypeStr	      "Inherit: Same as output"
+      IntermediateResultsDataTypeStr "Inherit: Same as output"
+      InterpMethod	      "Linear"
+      ExtrapMethod	      "Linear"
+      DiagnosticForOutOfRangeInput "None"
+      RemoveProtectionInput   off
+      UseLastTableValue	      off
+      SampleTime	      "-1"
+      InternalRulePriority    "Precision"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      FractionDataTypeStr     "Inherit: Inherit via internal rule"
+      SupportTunableTableSize off
+      MaximumIndicesForEachDimension "[]"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "model_matematyczny"
+    Location		    [-8, 0, 1370, 744]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "97"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "145"
+    Block {
+      BlockType		      Inport
+      Name		      "q"
+      SID		      "127"
+      Position		      [710, 135, 815, 195]
+      ZOrder		      157
+      BackgroundColor	      "blue"
+      DropShadow	      on
+      IconDisplay	      "Port number"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "140"
+      Position		      [770, 385, 800, 415]
+      ZOrder		      170
+      Value		      "0.65"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      "141"
+      Position		      [770, 435, 800, 465]
+      ZOrder		      171
+      Value		      "0.9"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "144"
+      Ports		      [1]
+      Position		      [1200, 395, 1300, 465]
+      ZOrder		      174
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      SID		      "142"
+      Position		      [975, 415, 1005, 445]
+      ZOrder		      172
+      Gain		      "[5 2]"
+      Multiplication	      "Matrix(K*u)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "139"
+      Ports		      [2, 1]
+      Position		      [835, 373, 895, 482]
+      ZOrder		      169
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "129"
+      Ports		      [1]
+      Position		      [1200, 59, 1230, 91]
+      ZOrder		      159
+      Floating		      off
+      Location		      [188, 390, 512, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      "130"
+      Ports		      [1]
+      Position		      [1200, 124, 1230, 156]
+      ZOrder		      160
+      Floating		      off
+      Location		      [188, 390, 512, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      SID		      "131"
+      Ports		      [1]
+      Position		      [1200, 179, 1230, 211]
+      ZOrder		      161
+      Floating		      off
+      Location		      [188, 390, 512, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Zbiorniki"
+      SID		      "82"
+      Ports		      [1, 3]
+      Position		      [885, 79, 1140, 251]
+      ZOrder		      120
+      BackgroundColor	      "darkGreen"
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Zbiorniki"
+	Location		[-8, 0, 1370, 744]
+	Open			on
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"175"
+	Block {
+	  BlockType		  Inport
+	  Name			  "q"
+	  SID			  "83"
+	  Position		  [155, 415, 220, 445]
+	  ZOrder		  115
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "\n"
+	  SID			  "10"
+	  Position		  [1115, 232, 1150, 268]
+	  ZOrder		  59
+	  FontSize		  16
+	  Value			  "c*w"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "\n1"
+	  SID			  "43"
+	  Position		  [550, 927, 585, 963]
+	  ZOrder		  93
+	  ShowName		  off
+	  FontSize		  16
+	  Value			  "R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "-1/S(H1)"
+	  SID			  "2"
+	  Position		  [110, 287, 180, 343]
+	  ZOrder		  43
+	  FontSize		  16
+	  Value			  "(1/(a*w))"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C\n1"
+	  SID			  "11"
+	  Position		  [1230, 202, 1265, 238]
+	  ZOrder		  62
+	  ShowName		  off
+	  FontSize		  16
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C\n2"
+	  SID			  "12"
+	  Position		  [995, 314, 1080, 376]
+	  ZOrder		  60
+	  ShowName		  off
+	  FontSize		  16
+	  Value			  "b*w/H2max"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C\n3"
+	  SID			  "44"
+	  Position		  [880, 927, 915, 963]
+	  ZOrder		  94
+	  ShowName		  off
+	  FontSize		  16
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C\n4"
+	  SID			  "45"
+	  Position		  [810, 902, 845, 938]
+	  ZOrder		  98
+	  ShowName		  off
+	  FontSize		  16
+	  Value			  "w"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C\n5"
+	  SID			  "46"
+	  Position		  [890, 767, 925, 803]
+	  ZOrder		  88
+	  ShowName		  off
+	  FontSize		  16
+	  Value			  "27.4420"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C1\n"
+	  SID			  "3"
+	  Position		  [245, 247, 280, 283]
+	  ZOrder		  41
+	  FontSize		  16
+	  Value			  "30.6811"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C2\n"
+	  SID			  "13"
+	  Position		  [1115, 162, 1150, 198]
+	  ZOrder		  53
+	  FontSize		  16
+	  Value			  "22.5954"
+	}
+	Block {
+	  BlockType		  Lookup_n-D
+	  Name			  "Charakterystyka_pompa"
+	  SID			  "103"
+	  Ports			  [1, 1]
+	  Position		  [270, 398, 335, 462]
+	  ZOrder		  121
+	  NumberOfTableDimensions "1"
+	  BreakpointsForDimension1 "[0.180000000000000	0.181000000000000	0.182000000000000	0.183000000000000	0.18400000000000"
+	  "0	0.185000000000000	0.186000000000000	0.187000000000000	0.188000000000000	0.189000000000000	0.190000000000000	0.191"
+	  "000000000000	0.192000000000000	0.193000000000000	0.194000000000000	0.195000000000000	0.196000000000000	0.1970000000"
+	  "00000	0.198000000000000	0.199000000000000	0.200000000000000	0.201000000000000	0.202000000000000	0.203000000000000	0"
+	  ".204000000000000	0.205000000000000	0.206000000000000	0.207000000000000	0.208000000000000	0.209000000000000	0.210000"
+	  "000000000	0.211000000000000	0.212000000000000	0.213000000000000	0.214000000000000	0.215000000000000	0.2160000000000"
+	  "00	0.217000000000000	0.218000000000000	0.219000000000000	0.220000000000000	0.221000000000000	0.222000000000000	0.22"
+	  "3000000000000	0.224000000000000	0.225000000000000	0.226000000000000	0.227000000000000	0.228000000000000	0.229000000"
+	  "000000	0.230000000000000	0.231000000000000	0.232000000000000	0.233000000000000	0.234000000000000	0.235000000000000	"
+	  "0.236000000000000	0.237000000000000	0.238000000000000	0.239000000000000	0.240000000000000	0.241000000000000	0.24200"
+	  "0000000000	0.243000000000000	0.244000000000000	0.245000000000000	0.246000000000000	0.247000000000000	0.248000000000"
+	  "000	0.249000000000000	0.250000000000000	0.251000000000000	0.252000000000000	0.253000000000000	0.254000000000000	0.2"
+	  "55000000000000	0.256000000000000	0.257000000000000	0.258000000000000	0.259000000000000	0.260000000000000	0.26100000"
+	  "0000000	0.262000000000000	0.263000000000000	0.264000000000000	0.265000000000000	0.266000000000000	0.267000000000000"
+	  "	0.268000000000000	0.269000000000000	0.270000000000000	0.271000000000000	0.272000000000000	0.273000000000000	0.2740"
+	  "00000000000	0.275000000000000	0.276000000000000	0.277000000000000	0.278000000000000	0.279000000000000	0.28000000000"
+	  "0000	0.281000000000000	0.282000000000000	0.283000000000000	0.284000000000000	0.285000000000000	0.286000000000000	0."
+	  "287000000000000	0.288000000000000	0.289000000000000	0.290000000000000	0.291000000000000	0.292000000000000	0.2930000"
+	  "00000000	0.294000000000000	0.295000000000000	0.296000000000000	0.297000000000000	0.298000000000000	0.29900000000000"
+	  "0	0.300000000000000	0.301000000000000	0.302000000000000	0.303000000000000	0.304000000000000	0.305000000000000	0.306"
+	  "000000000000	0.307000000000000	0.308000000000000	0.309000000000000	0.310000000000000	0.311000000000000	0.3120000000"
+	  "00000	0.313000000000000	0.314000000000000	0.315000000000000	0.316000000000000	0.317000000000000	0.318000000000000	0"
+	  ".319000000000000	0.320000000000000	0.321000000000000	0.322000000000000	0.323000000000000	0.324000000000000	0.325000"
+	  "000000000	0.326000000000000	0.327000000000000	0.328000000000000	0.329000000000000	0.330000000000000	0.3310000000000"
+	  "00	0.332000000000000	0.333000000000000	0.334000000000000	0.335000000000000	0.336000000000000	0.337000000000000	0.33"
+	  "8000000000000	0.339000000000000	0.340000000000000	0.341000000000000	0.342000000000000	0.343000000000000	0.344000000"
+	  "000000	0.345000000000000	0.346000000000000	0.347000000000000	0.348000000000000	0.349000000000000	0.350000000000000	"
+	  "0.351000000000000	0.352000000000000	0.353000000000000	0.354000000000000	0.355000000000000	0.356000000000000	0.35700"
+	  "0000000000	0.358000000000000	0.359000000000000	0.360000000000000	0.361000000000000	0.362000000000000	0.363000000000"
+	  "000	0.364000000000000	0.365000000000000	0.366000000000000	0.367000000000000	0.368000000000000	0.369000000000000	0.3"
+	  "70000000000000	0.371000000000000	0.372000000000000	0.373000000000000	0.374000000000000	0.375000000000000	0.37600000"
+	  "0000000	0.377000000000000	0.378000000000000	0.379000000000000	0.380000000000000	0.381000000000000	0.382000000000000"
+	  "	0.383000000000000	0.384000000000000	0.385000000000000	0.386000000000000	0.387000000000000	0.388000000000000	0.3890"
+	  "00000000000	0.390000000000000	0.391000000000000	0.392000000000000	0.393000000000000	0.394000000000000	0.39500000000"
+	  "0000	0.396000000000000	0.397000000000000	0.398000000000000	0.399000000000000	0.400000000000000	0.401000000000000	0."
+	  "402000000000000	0.403000000000000	0.404000000000000	0.405000000000000	0.406000000000000	0.407000000000000	0.4080000"
+	  "00000000	0.409000000000000	0.410000000000000	0.411000000000000	0.412000000000000	0.413000000000000	0.41400000000000"
+	  "0	0.415000000000000	0.416000000000000	0.417000000000000	0.418000000000000	0.419000000000000	0.420000000000000	0.421"
+	  "000000000000	0.422000000000000	0.423000000000000	0.424000000000000	0.425000000000000	0.426000000000000	0.4270000000"
+	  "00000	0.428000000000000	0.429000000000000	0.430000000000000	0.431000000000000	0.432000000000000	0.433000000000000	0"
+	  ".434000000000000	0.435000000000000	0.436000000000000	0.437000000000000	0.438000000000000	0.439000000000000	0.440000"
+	  "000000000	0.441000000000000	0.442000000000000	0.443000000000000	0.444000000000000	0.445000000000000	0.4460000000000"
+	  "00	0.447000000000000	0.448000000000000	0.449000000000000	0.450000000000000	0.451000000000000	0.452000000000000	0.45"
+	  "3000000000000	0.454000000000000	0.455000000000000	0.456000000000000	0.457000000000000	0.458000000000000	0.459000000"
+	  "000000	0.460000000000000	0.461000000000000	0.462000000000000	0.463000000000000	0.464000000000000	0.465000000000000	"
+	  "0.466000000000000	0.467000000000000	0.468000000000000	0.469000000000000	0.470000000000000	0.471000000000000	0.47200"
+	  "0000000000	0.473000000000000	0.474000000000000	0.475000000000000	0.476000000000000	0.477000000000000	0.478000000000"
+	  "000	0.479000000000000	0.480000000000000	0.481000000000000	0.482000000000000	0.483000000000000	0.484000000000000	0.4"
+	  "85000000000000	0.486000000000000	0.487000000000000	0.488000000000000	0.489000000000000	0.490000000000000	0.49100000"
+	  "0000000	0.492000000000000	0.493000000000000	0.494000000000000	0.495000000000000	0.496000000000000	0.497000000000000"
+	  "	0.498000000000000	0.499000000000000	0.500000000000000	0.501000000000000	0.502000000000000	0.503000000000000	0.5040"
+	  "00000000000	0.505000000000000	0.506000000000000	0.507000000000000	0.508000000000000	0.509000000000000	0.51000000000"
+	  "0000	0.511000000000000	0.512000000000000	0.513000000000000	0.514000000000000	0.515000000000000	0.516000000000000	0."
+	  "517000000000000	0.518000000000000	0.519000000000000	0.520000000000000	0.521000000000000	0.522000000000000	0.5230000"
+	  "00000000	0.524000000000000	0.525000000000000	0.526000000000000	0.527000000000000	0.528000000000000	0.52900000000000"
+	  "0	0.530000000000000	0.531000000000000	0.532000000000000	0.533000000000000	0.534000000000000	0.535000000000000	0.536"
+	  "000000000000	0.537000000000000	0.538000000000000	0.539000000000000	0.540000000000000	0.541000000000000	0.5420000000"
+	  "00000	0.543000000000000	0.544000000000000	0.545000000000000	0.546000000000000	0.547000000000000	0.548000000000000	0"
+	  ".549000000000000	0.550000000000000	0.551000000000000	0.552000000000000	0.553000000000000	0.554000000000000	0.555000"
+	  "000000000	0.556000000000000	0.557000000000000	0.558000000000000	0.559000000000000	0.560000000000000	0.5610000000000"
+	  "00	0.562000000000000	0.563000000000000	0.564000000000000	0.565000000000000	0.566000000000000	0.567000000000000	0.56"
+	  "8000000000000	0.569000000000000	0.570000000000000	0.571000000000000	0.572000000000000	0.573000000000000	0.574000000"
+	  "000000	0.575000000000000	0.576000000000000	0.577000000000000	0.578000000000000	0.579000000000000	0.580000000000000	"
+	  "0.581000000000000	0.582000000000000	0.583000000000000	0.584000000000000	0.585000000000000	0.586000000000000	0.58700"
+	  "0000000000	0.588000000000000	0.589000000000000	0.590000000000000	0.591000000000000	0.592000000000000	0.593000000000"
+	  "000	0.594000000000000	0.595000000000000	0.596000000000000	0.597000000000000	0.598000000000000	0.599000000000000	0.6"
+	  "00000000000000	0.601000000000000	0.602000000000000	0.603000000000000	0.604000000000000	0.605000000000000	0.60600000"
+	  "0000000	0.607000000000000	0.608000000000000	0.609000000000000	0.610000000000000	0.611000000000000	0.612000000000000"
+	  "	0.613000000000000	0.614000000000000	0.615000000000000	0.616000000000000	0.617000000000000	0.618000000000000	0.6190"
+	  "00000000000	0.620000000000000	0.621000000000000	0.622000000000000	0.623000000000000	0.624000000000000	0.62500000000"
+	  "0000	0.626000000000000	0.627000000000000	0.628000000000000	0.629000000000000	0.630000000000000	0.631000000000000	0."
+	  "632000000000000	0.633000000000000	0.634000000000000	0.635000000000000	0.636000000000000	0.637000000000000	0.6380000"
+	  "00000000	0.639000000000000	0.640000000000000	0.641000000000000	0.642000000000000	0.643000000000000	0.64400000000000"
+	  "0	0.645000000000000	0.646000000000000	0.647000000000000	0.648000000000000	0.649000000000000	0.650000000000000	0.651"
+	  "000000000000	0.652000000000000	0.653000000000000	0.654000000000000	0.655000000000000	0.656000000000000	0.6570000000"
+	  "00000	0.658000000000000	0.659000000000000	0.660000000000000	0.661000000000000	0.662000000000000	0.663000000000000	0"
+	  ".664000000000000	0.665000000000000	0.666000000000000	0.667000000000000	0.668000000000000	0.669000000000000	0.670000"
+	  "000000000	0.671000000000000	0.672000000000000	0.673000000000000	0.674000000000000	0.675000000000000	0.6760000000000"
+	  "00	0.677000000000000	0.678000000000000	0.679000000000000	0.680000000000000	0.681000000000000	0.682000000000000	0.68"
+	  "3000000000000	0.684000000000000	0.685000000000000	0.686000000000000	0.687000000000000	0.688000000000000	0.689000000"
+	  "000000	0.690000000000000	0.691000000000000	0.692000000000000	0.693000000000000	0.694000000000000	0.695000000000000	"
+	  "0.696000000000000	0.697000000000000	0.698000000000000	0.699000000000000	0.700000000000000	0.701000000000000	0.70200"
+	  "0000000000	0.703000000000000	0.704000000000000	0.705000000000000	0.706000000000000	0.707000000000000	0.708000000000"
+	  "000	0.709000000000000	0.710000000000000	0.711000000000000	0.712000000000000	0.713000000000000	0.714000000000000	0.7"
+	  "15000000000000	0.716000000000000	0.717000000000000	0.718000000000000	0.719000000000000	0.720000000000000	0.72100000"
+	  "0000000	0.722000000000000	0.723000000000000	0.724000000000000	0.725000000000000	0.726000000000000	0.727000000000000"
+	  "	0.728000000000000	0.729000000000000	0.730000000000000	0.731000000000000	0.732000000000000	0.733000000000000	0.7340"
+	  "00000000000	0.735000000000000	0.736000000000000	0.737000000000000	0.738000000000000	0.739000000000000	0.74000000000"
+	  "0000	0.741000000000000	0.742000000000000	0.743000000000000	0.744000000000000	0.745000000000000	0.746000000000000	0."
+	  "747000000000000	0.748000000000000	0.749000000000000	0.750000000000000	0.751000000000000	0.752000000000000	0.7530000"
+	  "00000000	0.754000000000000	0.755000000000000	0.756000000000000	0.757000000000000	0.758000000000000	0.75900000000000"
+	  "0	0.760000000000000	0.761000000000000	0.762000000000000	0.763000000000000	0.764000000000000	0.765000000000000	0.766"
+	  "000000000000	0.767000000000000	0.768000000000000	0.769000000000000	0.770000000000000	0.771000000000000	0.7720000000"
+	  "00000	0.773000000000000	0.774000000000000	0.775000000000000	0.776000000000000	0.777000000000000	0.778000000000000	0"
+	  ".779000000000000	0.780000000000000	0.781000000000000	0.782000000000000	0.783000000000000	0.784000000000000	0.785000"
+	  "000000000	0.786000000000000	0.787000000000000	0.788000000000000	0.789000000000000	0.790000000000000	0.7910000000000"
+	  "00	0.792000000000000	0.793000000000000	0.794000000000000	0.795000000000000	0.796000000000000	0.797000000000000	0.79"
+	  "8000000000000	0.799000000000000	0.800000000000000	0.801000000000000	0.802000000000000	0.803000000000000	0.804000000"
+	  "000000	0.805000000000000	0.806000000000000	0.807000000000000	0.808000000000000	0.809000000000000	0.810000000000000	"
+	  "0.811000000000000	0.812000000000000	0.813000000000000	0.814000000000000	0.815000000000000	0.816000000000000	0.81700"
+	  "0000000000	0.818000000000000	0.819000000000000	0.820000000000000	0.821000000000000	0.822000000000000	0.823000000000"
+	  "000	0.824000000000000	0.825000000000000	0.826000000000000	0.827000000000000	0.828000000000000	0.829000000000000	0.8"
+	  "30000000000000	0.831000000000000	0.832000000000000	0.833000000000000	0.834000000000000	0.835000000000000	0.83600000"
+	  "0000000	0.837000000000000	0.838000000000000	0.839000000000000	0.840000000000000	0.841000000000000	0.842000000000000"
+	  "	0.843000000000000	0.844000000000000	0.845000000000000	0.846000000000000	0.847000000000000	0.848000000000000	0.8490"
+	  "00000000000	0.850000000000000	0.851000000000000	0.852000000000000	0.853000000000000	0.854000000000000	0.85500000000"
+	  "0000	0.856000000000000	0.857000000000000	0.858000000000000	0.859000000000000	0.860000000000000	0.861000000000000	0."
+	  "862000000000000	0.863000000000000	0.864000000000000	0.865000000000000	0.866000000000000	0.867000000000000	0.8680000"
+	  "00000000	0.869000000000000	0.870000000000000	0.871000000000000	0.872000000000000	0.873000000000000	0.87400000000000"
+	  "0	0.875000000000000	0.876000000000000	0.877000000000000	0.878000000000000	0.879000000000000	0.880000000000000	0.881"
+	  "000000000000	0.882000000000000	0.883000000000000	0.884000000000000	0.885000000000000	0.886000000000000	0.8870000000"
+	  "00000	0.888000000000000	0.889000000000000	0.890000000000000	0.891000000000000	0.892000000000000	0.893000000000000	0"
+	  ".894000000000000	0.895000000000000	0.896000000000000	0.897000000000000	0.898000000000000	0.899000000000000	0.900000"
+	  "000000000	0.901000000000000	0.902000000000000	0.903000000000000	0.904000000000000	0.905000000000000	0.9060000000000"
+	  "00	0.907000000000000	0.908000000000000	0.909000000000000	0.910000000000000	0.911000000000000	0.912000000000000	0.91"
+	  "3000000000000	0.914000000000000	0.915000000000000	0.916000000000000	0.917000000000000	0.918000000000000	0.919000000"
+	  "000000	0.920000000000000	0.921000000000000	0.922000000000000	0.923000000000000	0.924000000000000	0.925000000000000	"
+	  "0.926000000000000	0.927000000000000	0.928000000000000	0.929000000000000	0.930000000000000	0.931000000000000	0.93200"
+	  "0000000000	0.933000000000000	0.934000000000000	0.935000000000000	0.936000000000000	0.937000000000000	0.938000000000"
+	  "000	0.939000000000000	0.940000000000000	0.941000000000000	0.942000000000000	0.943000000000000	0.944000000000000	0.9"
+	  "45000000000000	0.946000000000000	0.947000000000000	0.948000000000000	0.949000000000000	0.950000000000000	0.95100000"
+	  "0000000	0.952000000000000	0.953000000000000	0.954000000000000	0.955000000000000	0.956000000000000	0.957000000000000"
+	  "	0.958000000000000	0.959000000000000	0.960000000000000	0.961000000000000	0.962000000000000	0.963000000000000	0.9640"
+	  "00000000000	0.965000000000000	0.966000000000000	0.967000000000000	0.968000000000000	0.969000000000000	0.97000000000"
+	  "0000	0.971000000000000	0.972000000000000	0.973000000000000	0.974000000000000	0.975000000000000	0.976000000000000	0."
+	  "977000000000000	0.978000000000000	0.979000000000000	0.980000000000000	0.981000000000000	0.982000000000000	0.9830000"
+	  "00000000	0.984000000000000	0.985000000000000	0.986000000000000	0.987000000000000	0.988000000000000	0.98900000000000"
+	  "0	0.990000000000000	0.991000000000000	0.992000000000000	0.993000000000000	0.994000000000000	0.995000000000000	0.996"
+	  "000000000000	0.997000000000000	0.998000000000000	0.999000000000000	1]"
+	  Table			  "[12.0028336476540	12.3293606666216	12.6550486652732	12.9798992380227	13.3039139792839	13.6270944834709	1"
+	  "3.9494423449973	14.2709591582772	14.5916465177244	14.9115060177528	15.2305392527763	15.5487478172088	15.86613330546"
+	  "40	16.1826973119561	16.4984414310987	16.8133672573059	17.1274763849915	17.4407704085693	17.7532509224533	18.0649195"
+	  "210574	18.3757777987953	18.6858273500811	18.9950697693286	19.3035066509517	19.6111395893642	19.9179701789801	20.224"
+	  "0000142132	20.5292306894775	20.8336637991868	21.1373009377549	21.4401436995959	21.7421936791235	22.0434524707516	22"
+	  ".3439216688942	22.6436028679651	22.9424976623782	23.2406076465474	23.5379344148866	23.8344795618096	24.130244681730"
+	  "4	24.4252313690628	24.7194412182207	25.0128758236180	25.3055367796686	25.5974256807863	25.8885441213852	26.17889369"
+	  "58789	26.4684759986814	26.7572926242067	27.0453451668686	27.3326352210809	27.6191643812576	27.9049342418125	28.1899"
+	  "463971596	28.4742024417127	28.7577039698856	29.0404525760924	29.3224498547468	29.6036974002628	29.8841968070542	30."
+	  "1639496695350	30.4429575821190	30.7212221392200	30.9987449352520	31.2755275646289	31.5515716217645	31.8268787010728"
+	  "	32.1014503969676	32.3752883038628	32.6483940161723	32.9207691283099	33.1924152346896	33.4633339297253	33.733526807"
+	  "8307	34.0029954634199	34.2717414909067	34.5397664847049	34.8070720392286	35.0736597488914	35.3395312081074	35.60468"
+	  "80112905	35.8691317528544	36.1328640272131	36.3958864287805	36.6582005519705	36.9198079911969	37.1807103408736	37.4"
+	  "409091954146	37.7004061492336	37.9592027967446	38.2173007323615	38.4747015504981	38.7314068455684	38.9874182119862	"
+	  "39.2427372441654	39.4973655365200	39.7513046834636	40.0045562794104	40.2571219187741	40.5090031959686	40.7602017054"
+	  "078	41.0107190415057	41.2605567986760	41.5097165713327	41.7581999538896	42.0060085407607	42.2531439263599	42.499607"
+	  "7051009	42.7454014713977	42.9905268196642	43.2349853443143	43.4787786397618	43.7219083004207	43.9643759207047	44.20"
+	  "61830950279	44.4473314178040	44.6878224834471	44.9276578863709	45.1668392209893	45.4053680817163	45.6432460629656	4"
+	  "5.8804747591513	46.1170557646872	46.3529906739871	46.5882810814650	46.8229285815347	47.0569347686101	47.29030123710"
+	  "52	47.5230295814337	47.7551213960096	47.9865782752468	48.2174018135591	48.4475936053605	48.6771552450647	48.9060883"
+	  "270858	49.1343944458375	49.3620751957338	49.5891321711886	49.8155669666157	50.0413811764291	50.2665763950425	50.491"
+	  "1542168699	50.7151162363253	50.9384640478223	51.1611992457751	51.3833234245973	51.6048381787030	51.8257451025060	52"
+	  ".0460457904202	52.2657418368594	52.4848348362376	52.7033263829687	52.9212180714665	53.1385114961448	53.355208251417"
+	  "7	53.5713099316990	53.7868181314025	54.0017344449422	54.2160604667319	54.4297977911855	54.6429480127170	54.85551272"
+	  "57401	55.0674935246688	55.2788920039170	55.4897097578985	55.6999483810273	55.9096094677171	56.1186946123820	56.3272"
+	  "054094357	56.5351434532922	56.7425103383654	56.9493076590691	57.1555370098172	57.3611999850236	57.5662981791023	57."
+	  "7708331864670	57.9748066015317	58.1782200187102	58.3810750324164	58.5833732370643	58.7851162270677	58.9863055968404"
+	  "	59.1869429407965	59.3870298533496	59.5865679289139	59.7855587619030	59.9840039467310	60.1819050778117	60.379263749"
+	  "5589	60.5760815563866	60.7723600927087	60.9681009529389	61.1633057314914	61.3579760227798	61.5521134212181	61.74571"
+	  "95212202	61.9387959171999	62.1313442035712	62.3233659747479	62.5148628251439	62.7058363491732	62.8962881412495	63.0"
+	  "862197957868	63.2756329071989	63.4645290698998	63.6529098783032	63.8407769268232	64.0281318098736	64.2149761218683	"
+	  "64.4013114572211	64.5871394103460	64.7724615756568	64.9572795475674	65.1415949204918	65.3254092888437	65.5087242470"
+	  "371	65.6915413894858	65.8738623106038	66.0556886048049	66.2370218665030	66.4178636901120	66.5982156700458	66.778079"
+	  "4007183	66.9574564765433	67.1363484919347	67.3147570413065	67.4926837190724	67.6701301196465	67.8470978374425	68.02"
+	  "35884668744	68.1996036023560	68.3751448383013	68.5502137691241	68.7248119892382	68.8989410930576	69.0726026749963	6"
+	  "9.2457983294680	69.4185296508865	69.5907982336660	69.7626056722201	69.9339535609629	70.1048434943080	70.27527706666"
+	  "96	70.4452558724614	70.6147815060973	70.7838555619913	70.9524796345572	71.1206553182088	71.2883842073601	71.4556678"
+	  "964250	71.6225079798173	71.7889060519509	71.9548637072397	72.1203825400977	72.2854641449386	72.4501101161764	72.614"
+	  "3220482249	72.7781015354980	72.9414501724097	73.1043695533738	73.2668612728042	73.4289269251147	73.5905681047193	73"
+	  ".7517864060318	73.9125834234662	74.0729607514363	74.2329199843560	74.3924627166392	74.5515905426997	74.710305056951"
+	  "5	74.8686078538084	75.0265005276843	75.1839846729932	75.3410618841488	75.4977337555651	75.6540018816559	75.80986785"
+	  "68353	75.9653332755169	76.1203997321148	76.2750688210427	76.4293421367147	76.5832212735445	76.7367078259461	76.8898"
+	  "033883332	77.0425095551200	77.1948279207201	77.3467600795475	77.4983076260161	77.6494721545398	77.8002552595325	77."
+	  "9506585354079	78.1006835765800	78.2503319774628	78.3996053324701	78.5485052360157	78.6970332825136	78.8451910663776"
+	  "	78.9929801820217	79.1404022238596	79.2874587863054	79.4341514637729	79.5804818506758	79.7264515414283	79.872062130"
+	  "4441	80.0173152121371	80.1622123809213	80.3067552312104	80.4509453574184	80.5947843539591	80.7382738152465	80.88141"
+	  "53356944	81.0242105097167	81.1666609317274	81.3087681961402	81.4505338973690	81.5919596298279	81.7330469879306	81.8"
+	  "737975660909	82.0142129587229	82.1542947602405	82.2940445650573	82.4334639675875	82.5725545622448	82.7113179434431	"
+	  "82.8497557055963	82.9878694431183	83.1256607504231	83.2631312219243	83.4002824520361	83.5371160351722	83.6736335657"
+	  "465	83.8098366381729	83.9457268468653	84.0813057862376	84.2165750507037	84.3515362346774	84.4861909325726	84.620540"
+	  "7388033	84.7545872477833	84.8883320539264	85.0217767516467	85.1549229353579	85.2877721994739	85.4203261384087	85.55"
+	  "25863465760	85.6845544183899	85.8162319482642	85.9476205306127	86.0787217598494	86.2095372303881	86.3400685366427	8"
+	  "6.4703172730272	86.6002850339553	86.7299734138410	86.8593840070982	86.9885184081407	87.1173782113825	87.24596501123"
+	  "74	87.3742804021192	87.5023259784420	87.6301033346195	87.7576140650657	87.8848597641944	88.0118420264195	88.1385624"
+	  "461550	88.2650226178146	88.3912241358123	88.5171685945621	88.6428575884776	88.7682927119728	88.8934755594617	89.018"
+	  "4077253581	89.1430908040759	89.2675263900290	89.3917160776312	89.5156614612964	89.6393641354386	89.7628256944716	89"
+	  ".8860477328093	90.0090318448656	90.1317796250543	90.2542926677894	90.3765725674847	90.4986209185542	90.620439315411"
+	  "7	90.7420293524710	90.8633926241461	90.9845307248509	91.1054452489992	91.2261377910050	91.3466099452821	91.46686330"
+	  "62444	91.5868994683057	91.7067200258800	91.8263265733812	91.9457207052231	92.0649040158197	92.1838780995847	92.3026"
+	  "445509322	92.4212049642759	92.5395609340298	92.6577140546077	92.7756659204236	92.8934181258913	93.0109722654247	93."
+	  "1283299334376	93.2454927243441	93.3624622325579	93.4792400524930	93.5958277785631	93.7122270051823	93.8284393267644"
+	  "	93.9444663377232	94.0603096324728	94.1759708054268	94.2914514509994	94.4067531636042	94.5218775376552	94.636826167"
+	  "5664	94.7516006477515	94.8662025726245	94.9806335365991	95.0948951340895	95.2089889595093	95.3229166072726	95.43667"
+	  "96717931	95.5502797474848	95.6637184287616	95.7769973100373	95.8901179857258	96.0030820502411	96.1158910979969	96.2"
+	  "285467234072	96.3410505208858	96.4534040848468	96.5656090097038	96.6776668898708	96.7895793197618	96.9013478937905	"
+	  "97.0129742063709	97.1244598519169	97.2358064248424	97.3470155195611	97.4580887304870	97.5690276520341	97.6798338786"
+	  "161	97.7905090046470	97.9010546245406	98.0114723327109	98.1217637235717	98.2319303915369	98.3419739310204	98.451895"
+	  "9364360	98.5616980021977	98.6713817227194	98.7809486924149	98.8904005056981	98.9997387569829	99.1089650406832	99.21"
+	  "80809512128	99.3270880829858	99.4359880304158	99.5447823879168	99.6534727499028	99.7620607107876	99.8705478649851	9"
+	  "9.9789358069090	100.087226130973	100.195420431592	100.303520303179	100.411527340148	100.519443136913	100.6272692878"
+	  "88	100.735007387487	100.842659030123	100.950225810211	101.057709322165	101.165111160397	101.272432919323	101.379676"
+	  "193356	101.486842576910	101.593933664398	101.700951050235	101.807896328835	101.914771094612	102.021576941979	102.12"
+	  "8315465350	102.234988259139	102.341596917760	102.448143035627	102.554628207154	102.661054026755	102.767422088843	10"
+	  "2.873733987833	102.979991318137	103.086195674172	103.192348650349	103.298451841083	103.404506840788	103.51051524387"
+	  "8	103.616478644767	103.722398637868	103.828276817595	103.934114778363	104.039914114585	104.145676420675	104.2514032"
+	  "91047	104.357096320115	104.462757102293	104.568387231994	104.673988303633	104.779561911623	104.885109650378	104.990"
+	  "633114312	105.096133897840	105.201613595374	105.307073801330	105.412516110120	105.517942116158	105.623353413859	105"
+	  ".728751597636	105.834138261904	105.939515001075	106.044883409565	106.150245081787	106.255601612154	106.360954595081"
+	  "	106.466305624981	106.571656296269	106.677008203358	106.782362940663	106.887722102596	106.993087283572	107.09846007"
+	  "8006	107.203842080310	107.309234884898	107.414640086185	107.520059278585	107.625494056511	107.730946014377	107.8364"
+	  "16746596	107.941907847584	108.047420911754	108.152957533519	108.258519307294	108.364107827493	108.469724688528	108."
+	  "575371484815	108.681049810768	108.786761260799	108.892507429323	108.998289910753	109.104110299505	109.209970189991	"
+	  "109.315871176625	109.421814853822	109.527802815995	109.633836657558	109.739917972925	109.846048356509	109.952229402"
+	  "726	110.058462705988	110.164749860710	110.271092461305	110.377492102187	110.483950377770	110.590468882469	110.69704"
+	  "9210696	110.803692956867	110.910401715394	111.017177080691	111.124020647173	111.230934009253	111.337918761346	111.4"
+	  "44976497865	111.552108813223	111.659317301836	111.766603558117	111.873969176479	111.981415751336	112.088944877103	1"
+	  "12.196558148193	112.304257159021	112.412043504000	112.519918777543	112.627884574066	112.735942487981	112.8440941137"
+	  "03	112.952341045645	113.060684878222	113.169127205847	113.277669622934	113.386313723897	113.495061103150	113.603913"
+	  "355107	113.712872074182	113.821938854788	113.931115291340	114.040402978251	114.149803509936	114.259318480807	114.36"
+	  "8949485279	114.478698117767	114.588565972683	114.698554644442	114.808665727457	114.918900816143	115.029261504913	11"
+	  "5.139749388181	115.250366060362	115.361113115868	115.471992149115	115.583004754515	115.694152526482	115.80543705943"
+	  "1	115.916859947776	116.028422785930	116.140127168307	116.251974689321	116.363966943386	116.476105524916	116.5883920"
+	  "28324	116.700828048025	116.813415178433	116.926155013961	117.039049149023	117.152099178034	117.265306695406	117.378"
+	  "673295554	117.492200572892	117.605890121834	117.719743536793	117.833762412184	117.947948342420	118.062302921915	118"
+	  ".176827745084	118.291524406339	118.406394500095	118.521439620766	118.636661362766	118.752061320508	118.867641088407"
+	  "	118.983402260876	119.099346432329	119.215475197180	119.331790149843	119.448292884731	119.564984996260	119.68186807"
+	  "8842	119.798943726892	119.916213534823	120.033679097049	120.151342007984	120.269203862043	120.387266253638	120.5055"
+	  "30777184	120.623999027095	120.742672597784	120.861553083666	120.980642079154	121.099941178663	121.219451976605	121."
+	  "339176067396	121.459115045448	121.579270505176	121.699644040994	121.820237247315	121.941051718554	122.062089049124	"
+	  "122.183350833439	122.304838665913	122.426554140960	122.548498852994	122.670674396429	122.793082365678	122.915724355"
+	  "156	123.038601959276	123.161716772453	123.285070389099	123.408664403630	123.532500410458	123.656580003998	123.78090"
+	  "4778664	123.905476328870	124.030296249029	124.155366133555	124.280687576863	124.406262173366	124.532091517477	124.6"
+	  "58177203612	124.784520826183	124.911123979605	125.037988258292	125.165115256657	125.292506569114	125.420163790077	1"
+	  "25.548088513961	125.676282335178	125.804746848143	125.933483647270	126.062494326973	126.191780481665	126.3213437057"
+	  "61	126.451185593673	126.581307739817	126.711711738606	126.842399184454	126.973371671775	127.104630794982	127.236178"
+	  "148490	127.368015326712	127.500143924063	127.632565534956	127.765281753805	127.898294175024	128.031604393027	128.16"
+	  "5214002228	128.299124597040	128.433337771878	128.567855121155	128.702678239286	128.837808720683	128.973248159762	12"
+	  "9.108998150936	129.245060288619	129.381436167224	129.518127381166	129.655135524859	129.792462192716	129.93010897915"
+	  "1	130.068077478578	130.206369285412	130.344985994065	130.483929198952	130.623200494487	130.762801475083	130.9027337"
+	  "35155	131.042998869116	131.183598471381	131.324534136362	131.465807458475	131.607420032132	131.749373451749	131.891"
+	  "669311737	132.034309206513	132.177294730489	132.320627478079	132.464309043697	132.608341021758	132.752725006674	132"
+	  ".897462592860	133.042555374730	133.188004946698	133.333812903177	133.479980838582	133.626510347325	133.773403023822"
+	  "	133.920660462486	134.068284257731	134.216276003971	134.364637295619	134.513369727090	134.662474892798	134.81195438"
+	  "7156	134.961809804578	135.112042739478	135.262654786270	135.413647539368	135.565022593186	135.716781542138	135.8689"
+	  "25980637	136.021457503097	136.174377703933	136.327688177558	136.481390518386	136.635486320831	136.789977179307	136."
+	  "944864688228	137.100150442007	137.255836035059	137.411923061797	137.568413116636	137.725307793989	137.882608688269	"
+	  "138.040317393892	138.198435505270	138.356964616819	138.515906322950	138.675262218080	138.835033896620	138.995222952"
+	  "986	139.155830981591	139.316859576849	139.478310333174	139.640184844980	139.802484706680	139.965211512689	140.12836"
+	  "6857420	140.291952335288	140.455969540706	140.620420068088	140.785305511848	140.950627466400	141.116387526157	141.2"
+	  "82587285534	141.449228338945	141.616312280803	141.783840705522	141.951815207517	142.120237381201	142.289108820987	1"
+	  "42.458431121290	142.628205876525	142.798434681103	142.969119129440	143.140260815950	143.311861335046	143.4839222811"
+	  "42	143.656445248652	143.829431831989	144.002883625569]"
+	  InterpMethod		  "Cubic spline"
+	  ExtrapMethod		  "Cubic spline"
+	  InternalRulePriority	  "Speed"
+	  RndMeth		  "Simplest"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  "14"
+	  Ports			  [2, 1]
+	  Position		  [1290, 207, 1330, 263]
+	  ZOrder		  61
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  "47"
+	  Ports			  [2, 1]
+	  Position		  [955, 867, 985, 898]
+	  ZOrder		  101
+	  Inputs		  "/*"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  SID			  "15"
+	  Ports			  [1, 1]
+	  Position		  [960, 100, 1040, 150]
+	  ZOrder		  52
+	  FontSize		  16
+	  InitialCondition	  "0.01"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  SID			  "4"
+	  Ports			  [1, 1]
+	  Position		  [50, 190, 130, 240]
+	  ZOrder		  40
+	  FontSize		  16
+	  InitialCondition	  "0.01"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  SID			  "48"
+	  Ports			  [1, 1]
+	  Position		  [480, 705, 560, 755]
+	  ZOrder		  87
+	  FontSize		  16
+	  InitialCondition	  "0.01"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "5"
+	  Ports			  [3, 1]
+	  Position		  [530, 190, 675, 340]
+	  ZOrder		  44
+	  FontSize		  16
+	  Inputs		  "3"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  "16"
+	  Ports			  [3, 1]
+	  Position		  [1440, 100, 1630, 260]
+	  ZOrder		  55
+	  FontSize		  16
+	  Inputs		  "3"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  SID			  "17"
+	  Ports			  [2, 1]
+	  Position		  [1115, 305, 1175, 360]
+	  ZOrder		  58
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  SID			  "49"
+	  Ports			  [3, 1]
+	  Position		  [1060, 705, 1250, 865]
+	  ZOrder		  90
+	  ShowName		  off
+	  FontSize		  16
+	  Inputs		  "3"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  SID			  "50"
+	  Ports			  [2, 1]
+	  Position		  [880, 847, 910, 883]
+	  ZOrder		  99
+	  ShowName		  off
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product5"
+	  SID			  "64"
+	  Ports			  [2, 1]
+	  Position		  [470, 360, 570, 455]
+	  ZOrder		  104
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  SID			  "70"
+	  Ports			  [2, 1]
+	  Position		  [1115, 420, 1215, 515]
+	  ZOrder		  109
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product7"
+	  SID			  "71"
+	  Ports			  [2, 1]
+	  Position		  [1505, 570, 1605, 665]
+	  ZOrder		  110
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product8"
+	  SID			  "73"
+	  Ports			  [2, 1]
+	  Position		  [1325, 355, 1420, 455]
+	  ZOrder		  112
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product9"
+	  SID			  "74"
+	  Ports			  [2, 1]
+	  Position		  [1455, 895, 1550, 995]
+	  ZOrder		  113
+	  BlockRotation		  270
+	  FontSize		  16
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "104"
+	  Ports			  [1, 1]
+	  Position		  [390, 415, 420, 445]
+	  ZOrder		  122
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "10"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "18"
+	  Ports			  [2, 1]
+	  Position		  [1185, 240, 1205, 260]
+	  ZOrder		  57
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  "51"
+	  Ports			  [2, 1]
+	  Position		  [615, 795, 635, 815]
+	  ZOrder		  92
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "52"
+	  Ports			  [2, 1]
+	  Position		  [735, 795, 755, 815]
+	  ZOrder		  96
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  "67"
+	  Ports			  [2, 1]
+	  Position		  [730, 220, 830, 310]
+	  ZOrder		  107
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  SID			  "72"
+	  Ports			  [2, 1]
+	  Position		  [1680, 135, 1780, 225]
+	  ZOrder		  111
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  SID			  "75"
+	  Ports			  [2, 1]
+	  Position		  [1455, 740, 1555, 830]
+	  ZOrder		  114
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)"
+	  SID			  "7"
+	  Position		  [230, 185, 290, 245]
+	  ZOrder		  42
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "sqrt(u)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)1"
+	  SID			  "20"
+	  Position		  [1205, 95, 1265, 155]
+	  ZOrder		  54
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "sqrt(u)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)2"
+	  SID			  "54"
+	  Position		  [730, 700, 790, 760]
+	  ZOrder		  89
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "sqrt(u)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)3"
+	  SID			  "55"
+	  Position		  [650, 775, 710, 835]
+	  ZOrder		  95
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "u^2"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)4"
+	  SID			  "56"
+	  Position		  [785, 825, 845, 885]
+	  ZOrder		  97
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "sqrt(u)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sqrt(H1)5"
+	  SID			  "57"
+	  Position		  [650, 855, 710, 915]
+	  ZOrder		  100
+	  ShowName		  off
+	  FontSize		  16
+	  Expr			  "u^2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "H1"
+	  SID			  "86"
+	  Position		  [190, 95, 270, 155]
+	  ZOrder		  120
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "H2"
+	  SID			  "85"
+	  Position		  [1255, 20, 1335, 80]
+	  ZOrder		  119
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "H3"
+	  SID			  "84"
+	  Position		  [735, 605, 815, 665]
+	  ZOrder		  118
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  108
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  70
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  71
+	  SrcBlock		  "Product5"
+	  SrcPort		  1
+	  Points		  [205, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  110
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, 368; -860, 0; 0, -423]
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  127
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  Points		  [69, 0; 0, 269; -1165, 0; 0, -324]
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  77
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, 284; -823, 0; 0, -334]
+	  DstBlock		  "Integrator1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  109
+	  SrcBlock		  "Product7"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  107
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  Points		  [76, 0; 0, 170]
+	  DstBlock		  "Product7"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  92
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [52, 0]
+	  Branch {
+	    ZOrder		    94
+	    Points		    [0, 195]
+	    DstBlock		    "Product2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    93
+	    Points		    [68, 0]
+	    Branch {
+	      ZOrder		      136
+	      Points		      [0, -75]
+	      DstBlock		      "H2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      130
+	      DstBlock		      "sqrt(H1)1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  126
+	  SrcBlock		  "Product9"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "sqrt(H1)"
+	  SrcPort		  1
+	  Points		  [104, 0]
+	  Branch {
+	    ZOrder		    100
+	    Points		    [0, -49; 470, 0; 0, 279]
+	    DstBlock		    "Product6"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    99
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    ZOrder		    137
+	    Points		    [0, -90]
+	    DstBlock		    "H1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    132
+	    DstBlock		    "sqrt(H1)"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "-1/S(H1)"
+	  SrcPort		  1
+	  Points		  [225, 0]
+	  Branch {
+	    ZOrder		    97
+	    Points		    [0, 70]
+	    DstBlock		    "Product5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    96
+	    DstBlock		    "Product"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "C1\n"
+	  SrcPort		  1
+	  Points		  [181, 0]
+	  Branch {
+	    ZOrder		    102
+	    Points		    [0, -81; 438, 0; 0, 306]
+	    DstBlock		    "Product6"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    101
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  60
+	  SrcBlock		  "sqrt(H1)5"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  59
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  Points		  [2, 0; 0, -45; 46, 0]
+	  Branch {
+	    ZOrder		    124
+	    Points		    [0, 184; 487, 0]
+	    DstBlock		    "Product9"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    123
+	    DstBlock		    "Product3"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  ZOrder		  57
+	  SrcBlock		  "C\n4"
+	  SrcPort		  1
+	  Points		  [0, -45]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  58
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  Points		  [17, 0; 0, 10]
+	  DstBlock		  "Divide1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  61
+	  SrcBlock		  "C\n3"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -55]
+	  DstBlock		  "Divide1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  49
+	  SrcBlock		  "C\n5"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  48
+	  SrcBlock		  "sqrt(H1)2"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  52
+	  SrcBlock		  "\n1"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -60]
+	  Branch {
+	    ZOrder		    51
+	    DstBlock		    "sqrt(H1)5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    50
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  55
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "sqrt(H1)4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  53
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "sqrt(H1)3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  56
+	  SrcBlock		  "sqrt(H1)4"
+	  SrcPort		  1
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  54
+	  SrcBlock		  "sqrt(H1)3"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  46
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [29, 0]
+	  Branch {
+	    ZOrder		    111
+	    Points		    [112, 0]
+	    Branch {
+	      ZOrder		      135
+	      Points		      [0, -95]
+	      DstBlock		      "H3"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      128
+	      DstBlock		      "sqrt(H1)2"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    42
+	    Points		    [0, 75]
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  125
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  Points		  [82, 0]
+	  Branch {
+	    ZOrder		    105
+	    DstBlock		    "Product1"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    104
+	    Points		    [0, -43; -140, 0; 0, 139; 213, 0]
+	    DstBlock		    "Product7"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "C\n1"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "C\n2"
+	  SrcPort		  1
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "C2\n"
+	  SrcPort		  1
+	  Points		  [240, 0]
+	  Branch {
+	    ZOrder		    198
+	    DstBlock		    "Product1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    116
+	    DstBlock		    "Product8"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "sqrt(H1)1"
+	  SrcPort		  1
+	  Points		  [80, 0]
+	  Branch {
+	    ZOrder		    199
+	    DstBlock		    "Product1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    113
+	    DstBlock		    "Product8"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  122
+	  SrcBlock		  "Product8"
+	  SrcPort		  1
+	  Points		  [0, 550]
+	  DstBlock		  "Product9"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  204
+	  SrcBlock		  "Charakterystyka_pompa"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  205
+	  SrcBlock		  "q"
+	  SrcPort		  1
+	  DstBlock		  "Charakterystyka_pompa"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  206
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  2
+	}
+	Annotation {
+	  SID			  "9"
+	  Name			  "H1"
+	  Position		  [175, 188, 197, 209]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -2
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "21"
+	  Name			  "1/S(H2)"
+	  Position		  [1285, 290, 1342, 311]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -3
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "22"
+	  Name			  "S(H2)"
+	  Position		  [1222, 258, 1265, 279]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -4
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "23"
+	  Name			  "H2'"
+	  Position		  [1693, 520, 1716, 538]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "tex"
+	  TeXMode		  on
+	  ZOrder		  -5
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "24"
+	  Name			  "H2"
+	  Position		  [1110, 98, 1132, 119]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -6
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "58"
+	  Name			  "1/(SH3)"
+	  Position		  [985, 810, 1042, 831]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -10
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "60"
+	  Name			  "H3"
+	  Position		  [655, 683, 677, 704]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -12
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "69"
+	  Name			  "H1'"
+	  Position		  [245, 513, 270, 534]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -13
+	  FontSize		  16
+	}
+	Annotation {
+	  SID			  "78"
+	  Name			  "H3'"
+	  Position		  [660, 1013, 685, 1034]
+	  AutoSize		  on
+	  WordWrap		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -14
+	  FontSize		  16
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out3"
+      SID		      "111"
+      Position		      [1345, 92, 1425, 128]
+      ZOrder		      141
+      BackgroundColor	      "[1.000000, 0.666667, 0.000000]"
+      DropShadow	      on
+      ShowName		      off
+      IconDisplay	      "Signal name"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out1"
+      SID		      "110"
+      Position		      [1345, 147, 1430, 183]
+      ZOrder		      140
+      BackgroundColor	      "[1.000000, 0.666667, 0.000000]"
+      DropShadow	      on
+      ShowName		      off
+      Port		      "2"
+      IconDisplay	      "Signal name"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out2"
+      SID		      "95"
+      Position		      [1350, 205, 1430, 235]
+      ZOrder		      129
+      BackgroundColor	      "[1.000000, 0.666667, 0.000000]"
+      DropShadow	      on
+      ShowName		      off
+      Port		      "3"
+      IconDisplay	      "Signal name"
+    }
+    Line {
+      ZOrder		      141
+      SrcBlock		      "Zbiorniki"
+      SrcPort		      3
+      Points		      [44, 0]
+      Branch {
+	ZOrder			223
+	Points			[0, -25]
+	DstBlock		"Scope2"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			222
+	DstBlock		"Out2"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      165
+      SrcBlock		      "Zbiorniki"
+      SrcPort		      1
+      Points		      [24, 0]
+      Branch {
+	ZOrder			219
+	Points			[0, -35]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			218
+	DstBlock		"Out3"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      166
+      SrcBlock		      "Zbiorniki"
+      SrcPort		      2
+      Points		      [42, 0]
+      Branch {
+	ZOrder			221
+	Points			[0, -25]
+	DstBlock		"Scope1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			220
+	DstBlock		"Out1"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      232
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      233
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      234
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      237
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      242
+      SrcBlock		      "q"
+      SrcPort		      1
+      DstBlock		      "Zbiorniki"
+      DstPort		      1
+    }
+    Annotation {
+      SID		      "98"
+      Name		      "H3"
+      Position		      [1385, 239, 1399, 254]
+      AutoSize		      on
+      WordWrap		      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "59"
+      Name		      "H3'"
+      Position		      [2108, 630, 2131, 648]
+      AutoSize		      on
+      WordWrap		      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "tex"
+      TeXMode		      on
+      ZOrder		      -11
+      FontSize		      16
+    }
+  }
+}

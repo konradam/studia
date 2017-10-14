@@ -1,0 +1,6 @@
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(538): Warning! W202: Symbol 'RtdacPCI_PWMNoOfChans' has been defined, but not referenced
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(543): Warning! W202: Symbol 'RtdacPCI_PWMChannel' has been defined, but not referenced
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(561): Warning! W202: Symbol 'RtdacPCI_PWMWidth' has been defined, but not referenced
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(549): Warning! W202: Symbol 'RtdacPCI_PWMMode' has been defined, but not referenced
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(555): Warning! W202: Symbol 'RtdacPCI_PWMPrescaler' has been defined, but not referenced
+C:\MATLAB\R2008a\toolbox\tanks\DevDriv\rtdacpci.c(567): Warning! W202: Symbol 'RtdacPCI_PWMRead' has been defined, but not referenced

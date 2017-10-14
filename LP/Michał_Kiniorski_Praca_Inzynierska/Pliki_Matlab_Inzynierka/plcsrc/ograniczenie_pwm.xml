@@ -1,0 +1,70 @@
+
+   <types>
+      <dataTypes/>
+      <pous>
+         <pou name="Ograniczenie_PWM0" pouType="functionBlock">
+            <interface>
+               <localVars>
+                  <variable name="temp1">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="rtb_Divide1">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+                  <variable name="i0_PLC_REAL_TRUNC">
+                     <type>
+                        <derived name="PLC_REAL_TRUNC"/>
+                     </type>
+                  </variable>
+               </localVars>
+               <outputVars>
+                  <variable name="wyjscie2_pwm">
+                     <type>
+                        <UDINT/>
+                     </type>
+                  </variable>
+                  <variable name="wyjscie1_pwm">
+                     <type>
+                        <UDINT/>
+                     </type>
+                  </variable>
+               </outputVars>
+               <inputVars>
+                  <variable name="wejscie2_pwm">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+                  <variable name="wejscie1_pwm">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+               </inputVars>
+            </interface>
+            <body>
+               <ST>
+                  <html xmlns="http://www.w3.org/1999/xhtml">
+                     <div id="MWTDESCRIPTION" wsName="Ograniczenie_PWM0" xml:space="preserve">
+
+IF wejscie1_pwm > 1.0 THEN 
+    rtb_Divide1 := 0.0;
+ELSE 
+    rtb_Divide1 := wejscie1_pwm;
+END_IF;
+rtb_Divide1 := rtb_Divide1 / 0.0039;
+wyjscie1_pwm := REAL_TO_UDINT(rtb_Divide1);
+IF wejscie2_pwm > 1.0 THEN 
+    rtb_Divide1 := 0.0;
+ELSE 
+    rtb_Divide1 := wejscie2_pwm;
+END_IF;
+
+rtb_Divide1 := rtb_Divide1 / 0.0039;
+
+wyjscie2_pwm := REAL_TO_UDINT(rtb_Divide1);
+               

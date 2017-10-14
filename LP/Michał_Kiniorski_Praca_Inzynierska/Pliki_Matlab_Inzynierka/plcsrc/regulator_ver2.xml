@@ -1,0 +1,209 @@
+
+TYPE
+    PLC_ARRAY_0_14_LREAL : ARRAY [0..14] OF REAL;
+    PLC_ARRAY_0_4_LREAL : ARRAY [0..4] OF REAL;
+END_TYPE<br/></div></html>
+         </datatypeWorksheet>
+      </dataTypes>
+      <pous>
+         <pou name="Regulator" pouType="functionBlock">
+            <interface>
+               <localVars>
+                  <variable name="temp7">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp6">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp5">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp4">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp3">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp2">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="temp1">
+                     <type>
+                        <DINT/>
+                     </type>
+                  </variable>
+                  <variable name="rtb_Switch">
+                     <type>
+                        <UINT/>
+                     </type>
+                  </variable>
+                  <variable name="rtb_Switch2">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+                  <variable name="need_init">
+                     <type>
+                        <BOOL/>
+                     </type>
+                     <initialValue>
+                        <simpleValue value="TRUE"/>
+                     </initialValue>
+                  </variable>
+                  <variable name="e">
+                     <type>
+                        <derived name="PLC_ARRAY_0_4_LREAL"/>
+                     </type>
+                  </variable>
+                  <variable name="b_d">
+                     <type>
+                        <derived name="PLC_ARRAY_0_4_LREAL"/>
+                     </type>
+                  </variable>
+                  <variable name="c">
+                     <type>
+                        <derived name="PLC_ARRAY_0_4_LREAL"/>
+                     </type>
+                  </variable>
+                  <variable name="b_P">
+                     <type>
+                        <derived name="PLC_ARRAY_0_14_LREAL"/>
+                     </type>
+                  </variable>
+                  <variable name="b">
+                     <type>
+                        <derived name="PLC_ARRAY_0_4_LREAL"/>
+                     </type>
+                  </variable>
+               </localVars>
+               <outputVars>
+                  <variable name="q">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+               </outputVars>
+               <inputVars>
+                  <variable name="Reset">
+                     <type>
+                        <BOOL/>
+                     </type>
+                  </variable>
+                  <variable name="Start">
+                     <type>
+                        <BOOL/>
+                     </type>
+                  </variable>
+                  <variable name="Auto0Reczna1">
+                     <type>
+                        <BOOL/>
+                     </type>
+                  </variable>
+                  <variable name="Tryb">
+                     <type>
+                        <UINT/>
+                     </type>
+                  </variable>
+                  <variable name="PVH3">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+                  <variable name="PVH2">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+                  <variable name="PVH1">
+                     <type>
+                        <REAL/>
+                     </type>
+                  </variable>
+               </inputVars>
+            </interface>
+            <body>
+               <ST>
+                  <html xmlns="http://www.w3.org/1999/xhtml">
+                     <div id="MWTDESCRIPTION" wsName="Regulator" xml:space="preserve">
+
+IF need_init THEN 
+    b[0] := REAL#5.5;
+    b[1] := REAL#7.7;
+    b[2] := REAL#10.0;
+    b[3] := REAL#12.6;
+    b[4] := REAL#10.3;
+    b_P[0] := REAL#0.0314;
+    b_P[1] := REAL#0.0355;
+    b_P[2] := REAL#0.0349;
+    b_P[3] := REAL#0.0376;
+    b_P[4] := REAL#0.0834;
+    b_P[5] := REAL#0.0142;
+    b_P[6] := REAL#0.0168;
+    b_P[7] := REAL#0.0188;
+    b_P[8] := REAL#0.0227;
+    b_P[9] := REAL#0.044;
+    b_P[10] := REAL#0.01;
+    b_P[11] := REAL#0.0106;
+    b_P[12] := REAL#0.0108;
+    b_P[13] := LREAL#0.0122;
+    b_P[14] := REAL#0.0108;
+    c[0] := REAL#9.8;
+    c[1] := REAL#13.7;
+    c[2] := REAL#17.4;
+    c[3] := REAL#22.1;
+    c[4] := REAL#23.5;
+    b_d[0] := REAL#7.8;
+    b_d[1] := REAL#10.0;
+    b_d[2] := REAL#12.0;
+    b_d[3] := REAL#15.0;
+    b_d[4] := REAL#11.4;
+    e[0] := REAL#0.6;
+    e[1] := REAL#0.65;
+    e[2] := REAL#0.7;
+    e[3] := REAL#0.75;
+    e[4] := REAL#0.8;
+    need_init := FALSE;
+END_IF;
+
+IF UINT_TO_DINT(Tryb) > DINT#5 THEN 
+    rtb_Switch := UINT#1;
+ELSE 
+    rtb_Switch := Tryb;
+END_IF;
+
+temp1 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+temp2 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+temp3 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+temp4 := UINT_TO_DINT(rtb_Switch) + DINT#4;
+temp5 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+temp6 := UINT_TO_DINT(rtb_Switch) + DINT#9;
+temp7 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+rtb_Switch2 := ((b[temp1] - PVH1) * b_P[temp2]) + ((c[temp3] - PVH2) * b_P[temp4]) + ((b_d[temp5] - PVH3) * b_P[temp6]) + e[temp7];
+IF rtb_Switch2 >= 1.0 THEN 
+    rtb_Switch2 := 1.0;
+ELSIF  NOT (rtb_Switch2 > 0.0) THEN 
+    rtb_Switch2 := 0.0;
+END_IF;
+>
+IF  NOT Auto0Reczna1 THEN 
+    temp1 := UINT_TO_DINT(rtb_Switch) - DINT#1;
+    rtb_Switch2 := (e[temp1]);
+END_IF;
+
+IF  NOT (BOOL_TO_DINT((Start XOR Reset) AND ( NOT Reset)) > DINT#0) THEN 
+    rtb_Switch2 := 0.0;
+END_IF;
+
+q := rtb_Switch2;

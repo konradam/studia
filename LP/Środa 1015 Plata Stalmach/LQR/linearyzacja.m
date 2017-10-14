@@ -1,0 +1,11 @@
+%A=zeros(3,3);
+%B=zeros(3,1);
+A=[-0.0190,0,0;0.0299,-0.0340,0;0,0.0281,-0.0282];
+B=[0.0065;0;0];
+C=eye(3);
+D=zeros(3,1);
+l1=[A B];
+lin=@(l1)linearka_1(l1(1:3,1:3),l1(1:3,4),C,D,q,zbiornikix);
+l1=fminsearch(lin,[A B],options);
+A=l1(1:3,1:3);
+B=l1(1:3,4);

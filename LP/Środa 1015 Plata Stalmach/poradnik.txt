@@ -1,0 +1,6 @@
+1. zawry nalac i zapisac pod y
+2. ucinanie
+3. ident
+4. sterowanie_ust
+5. linearyzacja
+6. regulator
