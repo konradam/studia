@@ -23,12 +23,19 @@ hold off;
 %% napelnienia pomp¹ PWM = 1
 
 load('pompa_pwm_1.mat', 'TankLevel');
+sim('model_pompy')
 
 figure()
-poziom = TankLevel.signals.values(:,1);
-czas = TankLevel.time(:,1);
+poziom = TankLevel.signals.values(119:end,1);
+czas = TankLevel.time(119:end,1)-1.18;
+czas_model = TankLevelModel.time(:,1);
+poziom_model = TankLevelModel.signals.values(:,1);
 plot(czas, poziom,'b');
+hold on
+plot(czas_model, poziom_model,'r', 'Linewidth',2);
 axis([0 max(czas) 0 35]);
 xlabel('Czas [s]');
 ylabel('Poziom zbiornika [cm]');
+legend('Wartoœci zmierzone', 'Model')
+
 

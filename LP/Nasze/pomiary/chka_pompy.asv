@@ -20,15 +20,15 @@ legend('Wartoœci zmierzone', 'Aproksymacja')
 hold off;
 
 
-%% napelnienia pomp¹  
+%% napelnienia pomp¹ PWM = 1
 
 load('pompa_pwm_1.mat', 'TankLevel');
 
 figure()
-temp = TankLevel.signals.values(:,1);
-plot(temp,'b');
-axis([.2 1 min(pred_napelniania)-1,max(pred_napelniania)+1]);
-xlabel('Wspó³czynnik wype³nienia PWM');
-ylabel('Wydajnoœæ pompy [cm^3/s]');
-% axis([.2 1 min(pred_napelniania)-1,max(pred_napelniania)+1]);
+poziom = TankLevel.signals.values(:,1);
+czas = TankLevel.time(119:end,1);
+plot(czas, poziom,'b');
+axis([0 max(czas) 0 35]);
+xlabel('Czas [s]');
+ylabel('Poziom zbiornika [cm]');
 

@@ -23,12 +23,18 @@ hold off;
 %% oprozanienie zaworem PWM = 1
 
 load('zaworGora_pwm_1.mat', 'TankLevel');
+sim('model_zaworGora')
 
 figure()
 poziom = TankLevel.signals.values(:,1);
 czas = TankLevel.time(:,1);
+czas_model = TankLevelModel.time(:,1);
+poziom_model = TankLevelModel.signals.values(:,1);
 plot(czas, poziom,'b');
+hold on
+plot(czas_model, poziom_model,'r', 'Linewidth',2);
 axis([0 max(czas) 0 35]);
 xlabel('Czas [s]');
 ylabel('Poziom zbiornika [cm]');
+legend('Wartoœci zmierzone', 'Model')
 
