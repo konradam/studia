@@ -100,33 +100,8 @@ for i = 1:length(data)
 end
 
 %Trzeci wskaŸnik
-Q32 = sum(sterowanie.signals.values.^2)*T_sim;
+Q3 = sum(sterowanie.signals.values.^2)*T_sim;
 
-%%
-%Poszukiwanie P I dla minimalizacji 4 wskaŸnika 
-[Nastawy] = fminsearch(@(x) wskaJak4(x), [P0, I0]);
-P = Nastawy(1);
-I = Nastawy(2);
-sim('modelJedenRegulator');
-
-%Pierwszy wskaŸnik
-Q14 = sum(uchyb.signals.values.^2);
-
-%Drugi wskaŸnik
-data = regulator1.signals.values(:,1);
-Q24 = 0;
-flaga = 0;
-for i = 1:length(data)
-    if (data(i) >= pi/4 - 0.05 &&  data(i) <= pi/4 + 0.05 && flaga == 0)
-        Q24 = tout(i);
-        flaga = 1;
-    elseif ~(data(i) >= pi/4 - 0.05 &&  data(i) <= pi/4 + 0.05)
-        flaga = 0;
-    end
-end
-
-%Trzeci wskaŸnik
-Q34 = sum(sterowanie.signals.values.^2)*T_sim;
 % 
 % sim('modelJedenRegulator');
 % plot(tout,regulator1.signals.values(:,1))
