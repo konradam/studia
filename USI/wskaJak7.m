@@ -1,4 +1,4 @@
-function Q = wskaJak5(params)
+function Q = wskaJak7(params)
     R = 2;
     k = 0.1;
     ke = 5;
@@ -22,17 +22,13 @@ function Q = wskaJak5(params)
     
     T_sim = 50;
     options = simset('SrcWorkspace','current','DstWorkspace','current');
-    sim('modelzWoda',[0 T_sim], options);
-    
-    przysp = regulator1.signals.values(:,4);
-    kara = 0;
-    for i = 1:length(przysp)
-       if (przysp(i) >= 0.1 ||  przysp(i) <= -0.1)
-         kara = kara + 500;
-       end
+    sim('modelZWoda',[0 T_sim], options);
+    if I < 0
+        Q = 3/5*sum(uchyb.signals.values.^2) + 2/5*sum(sterowanie.signals.values.^2) + 500;
+    else
+        Q = 3/5*sum(uchyb.signals.values.^2) + 2/5*sum(sterowanie.signals.values.^2);
     end
-    
-    Q = sum(uchyb.signals.values.^2) + kara;
+%     Q = 3/5*sum(uchyb.signals.values.^2) + 2/5*sum(sterowanie.signals.values.^2);
 
 
 end

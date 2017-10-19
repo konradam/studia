@@ -24,8 +24,8 @@ J2 = Jr + mw * r*r;
 % % D = [0; 0];
 % 
 %Nastawy regulatora
-P0 = 20;
-I0 = 0.03;
+P0 = 0.9525;
+I0 = 1.8273e-08;
 P = P0;
 I = I0;
 T_sim = 50;
