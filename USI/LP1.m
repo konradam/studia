@@ -16,7 +16,7 @@ Jr = 1/3*mr*r*r;
 J1 = Jr;
 
 %moment bezw³adnoœci z wod¹
-J2 = Jr + mw * r*r;
+J1 = Jr + mw * r*r;
 % 
 % % A = [0 k/J; -ke/L -R/L];
 % % B = [0; 1/L];
@@ -24,8 +24,12 @@ J2 = Jr + mw * r*r;
 % % D = [0; 0];
 % 
 %Nastawy regulatora
-P0 = 20;
-I0 = 0.03;
+% P0 = 0.9525;
+% I0 = 1.8273e-08;
+P0 = 0.7384;
+I0 = 0.0048;
+% P0 = 20;
+% I0 = 0.03;
 P = P0;
 I = I0;
 T_sim = 50;
