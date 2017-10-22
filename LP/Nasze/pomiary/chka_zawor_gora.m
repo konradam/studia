@@ -23,6 +23,7 @@ hold off;
 %% oprozanienie zaworem PWM = 1
 
 load('zaworGora_pwm_1.mat', 'TankLevel');
+load('parametryIdentyfikacja.mat')
 sim('model_zaworGora')
 
 figure()
