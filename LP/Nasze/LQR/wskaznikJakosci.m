@@ -5,14 +5,13 @@ function Q = wskaznikJakosci(params)
     T_sim = 50;
     h0 = 20;
     ref = 20;
-    load('parametryWielomianuPWMPompy.mat')
-    load('parametryWielomianuPWMZaworu.mat')
-    load('parametryWielomianuC1Zaworu.mat')
-    load('parametryWielomianuC2Zaworu.mat')
-    pompaP1 = p1;
+    
+    addpath('D:\Studia_repo\studia\LP\Nasze\model')
+    %wczytanie danych do modelu
+    skryptDoUruchamianiaModelu
     
     options = simset('SrcWorkspace','current','DstWorkspace','current');
-    sim('modelZbiornik',[0 T_sim], options);
+    sim('model_Zbiornik_wsk',[0 T_sim], options);
 
     Q = sum(uchyb.signals.values.^2);
  

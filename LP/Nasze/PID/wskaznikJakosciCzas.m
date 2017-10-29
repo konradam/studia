@@ -9,10 +9,10 @@ function Q = wskaznikJakosciCzas(params)
     T_sim = 200;
     h0 = 30;
     ref = 5;
-    load('parametryWielomianuPWMPompy.mat')
-    load('parametryWielomianuPWMZaworu.mat')
-    load('parametryWielomianuC1Zaworu.mat')
-    load('parametryWielomianuC2Zaworu.mat')
+    
+    addpath('D:\Studia_repo\studia\LP\Nasze\model')
+    %wczytanie danych do modelu
+    skryptDoUruchamianiaModelu
     
     options = simset('SrcWorkspace','current','DstWorkspace','current');
     sim('model',[0 T_sim], options);
