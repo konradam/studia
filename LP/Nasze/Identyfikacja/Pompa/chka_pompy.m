@@ -1,8 +1,10 @@
 clear all;
 close all;
 
-PWM_level = .2:.1:1;
-pred_napelniania = [8.69 39.9 59.52 75.97 89.99 102.46 115.05 128.27 139.79];
+% PWM_level = .2:.1:1;
+% pred_napelniania = [8.69 39.9 59.52 75.97 89.99 102.46 115.05 128.27 139.79];
+PWM_level = .3:.1:1;
+pred_napelniania = [39.9 59.52 75.97 89.99 102.46 115.05 128.27 139.79];
 
 figure()
 plot(PWM_level, pred_napelniania, 'r*');
