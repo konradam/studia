@@ -13,7 +13,7 @@ p1 = polyfit(PWM_level, pred_napelniania, 2);
 osx1 = linspace(min(PWM_level),max(PWM_level),1000);
 f1 = polyval(p1, osx1);
 plot(osx1,f1);
-axis([.2 1 min(pred_napelniania)-1,max(pred_napelniania)+1]);
+axis([.3 1 min(pred_napelniania)-1,max(pred_napelniania)+1]);
 xlabel('Wspó³czynnik wype³nienia PWM');
 ylabel('Wydajnoœæ pompy [cm^3/s]');
 legend('Wartoœci zmierzone', 'Aproksymacja')
