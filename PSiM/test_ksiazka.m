@@ -2,7 +2,7 @@ clear all;
 close all;
 
 [x , fpr] = audioread('female.wav');
-x = x(1:24000);
+x = x(1:40000);
 
 plot(x);
 

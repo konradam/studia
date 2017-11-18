@@ -1,7 +1,7 @@
 clear all;
 close all;
 
-[x , fpr] = audioread('Zmikro.wav');
+[x , fpr] = audioread('KamilTest.wav');
 % x = x(1:24000);
 
 filtHz = 500;

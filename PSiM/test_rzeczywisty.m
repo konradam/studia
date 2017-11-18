@@ -63,7 +63,7 @@ while(1)
         H = freqz(1,[1;a]);
         
 %         zmien warto T zeby zmienic glos, T = 0 <- oryginalny glos 
-        T = 0;
+        T = 80;
         if(T~=0)
             gdzie = gdzie - Mstep;
         end
