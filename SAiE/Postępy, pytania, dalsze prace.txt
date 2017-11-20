@@ -1,0 +1,39 @@
+Wrzuci³em transmitancje modelu
+Stworzy³em modele strejca dla poszczególnych n
+Mo¿esz sprawdziæ czy na pewno dobrze jest to zrobione? Przede wszystkim dla n = 5 bo mi rzuca ¿e jest czas ujemny
+
+Co dalej?
+Stworzenie sygna³u losowego (z³o¿enie kilku sinusów)
+Wyliczenie dyskretnej impulsowej funkcji przejscia
+Dyskretna odpowiedz skokowa
+
+/**************************************/
+
+UPDATE:
+1. Doda³em inny spsób lczenia Streica modeli, dla sprawdzenia, czy wszystko dzia³a tak samo -> dzia³a identycznie -> plik model_streic.m
+2. Doda³em generowanie sygna³u losowego w Simulinku (wyda³o mi siê prostsze). Nie jest to strikte sygna³ losowy, a uk³ad zamkniêty z pidem _. plik symulacja_szumy.slx i uruchom_symulacje_szumy.m
+3. Wyliczenie dyskretnej odpowiedzi impulsowej i skokowej -> plik analiza_szumu.m
+
+Aby odpaliæ nale¿y najpierw wygenerowaæ plik z symulacji (uruchom_symulacje_szumy.m), a potem analiza_szumu.m. Nastêpnie odkomentowaæ linijkê w pliku model_strejc2.m:
+% load zidentyfikowana_odpowiedz.mat
+
+I powinno wyrysowaæ identyfikacjê.
+
+Specjalnie doda³em w pidzie oscylacje, przez co jeœ³i weŸmiemy tylko 100s, a nie 150 to wszystko siê rozpada.
+Pozosta³e pliki to jakieœ funkcje, któe s³u¿¹ g³ównie do wykresów.
+
+TODO:
+1. Sprawdziæ rekurencje w analizie szumów
+2. Zbudowaæ lepszy model zaszumionego obiektu
+3. Lepiej interpretowaæ wyniki identyfikacji
+4. Okreœliæ ograniczenia metody
+5. Pytaæ Byrskiego co dalej
+
+/**************************************/
+UPDATE:
+1. Sprawdzia³em rekurencje, wygl¹da w porz¹dku 
+2. Wydaje mi siê ¿e dla sygna³ów, które maj¹ punkty nieci¹g³oœci to nie bêdzie dzia³aæ
+3. Jak zwiêkszymy wystarczaj¹co okres próbkowania zaczyna dzia³aæ
+4. Bia³y szum nie dzia³a
+
+
