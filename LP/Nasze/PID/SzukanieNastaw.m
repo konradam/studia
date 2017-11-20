@@ -1,11 +1,16 @@
 clear all;
 close all;
 
-P0 = 1;
-% I0 = 1;
-D0 = 1;
+P01 = 1;
+D01 = 1;
+P02 = 1;
+D02 = 1;
+% [Nastawy] = fminsearch(@(x) wskaznikJakosci(x), [P0, D0]);
 
-[Nastawy] = fminsearch(@(x) wskaznikJakosci(x), [P0, D0]);
+lb = [0.3 0.4];
+ub = [1, 1];
+% [Nastawy] = fmincon(@(x) wskaznikJakosci2(x), [P01, D01, P02, D02],[],[],[],[], lb, ub);
+[Nastawy] = fminsearch(@(x) wskaznikJakosci2(x), [P01, D01, P02, D02]);
 % [Nastawy] = fminsearch(@(x) wskaznikJakosciCzas(x), [P0, D0]);
 % P = Nastawy(1);
 % I = Nastawy(2);

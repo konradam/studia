@@ -54,7 +54,7 @@ czas = TankLevel.time(:,1);
 T_sim = czas(end);
 h0 = poziom(1);
 figure()
-subplot(5,1,1)
+% subplot(5,1,1)
 plot(czas, poziom,'b');
 hold on
 
@@ -66,7 +66,7 @@ czas_model = TankLevelModel.time(:,1);
 poziom_model = TankLevelModel.signals.values(:,1);
 
 plot(czas_model, poziom_model,'r', 'Linewidth',2);
-axis([0 max(czas) 0 35]);
+axis([0 180 0 35]);
 xlabel('Czas [s]');
 ylabel('Poziom zbiornika [cm]');
 legend('Wartoœci zmierzone', 'Model')

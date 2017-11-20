@@ -3,6 +3,7 @@ clear all;
 close all;
 
 addpath('D:\Studia_repo\studia\LP\Nasze\model')
+addpath('C:\Users\Kamil\Documents\Magisterka\studia\LP\Nasze\model')
 
 %znalezione nastawy
 % P1 = 1.089062371871661;
@@ -29,7 +30,11 @@ P1 = 1.559211858494873;
 I1 = 5.687643061134081e-04;
 D1 = 1.333293908881934;
 
-
+% %zna
+% P1 = 0.061970486558505;
+% D1 = 1.179715031273067;
+% P2 = 1.360339106565345;
+% D2 = 1.032689867085158;
 
 T_sim = 300;
 h0 = 5;
